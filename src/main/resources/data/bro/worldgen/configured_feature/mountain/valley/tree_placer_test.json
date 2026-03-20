@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "features": [
+      {
+        "feature": "bro:mountain/valley/ancient_tree",
+        "chance": 0.135
+      }
+    ],
+    "default": "bro:na"
+  }
+}
