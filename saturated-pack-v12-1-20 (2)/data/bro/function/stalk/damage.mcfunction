@@ -1,1 +1,0 @@
-execute as @e[tag=brostalker] at @s run damage @s 1 generic by @e[limit=1,tag=bropresentinvoid]

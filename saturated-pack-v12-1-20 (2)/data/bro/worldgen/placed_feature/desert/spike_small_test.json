@@ -1,9 +1,0 @@
-{
-  "feature": "bro:desert/spike_small_test",
-  "placement": [
-    {
-      "type": "minecraft:count_on_every_layer",
-      "count": 1
-    }
-  ]
-}

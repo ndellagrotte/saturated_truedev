@@ -1,1 +1,0 @@
-execute as @e[tag=delusioneffect] run tag @s remove delusioneffect
