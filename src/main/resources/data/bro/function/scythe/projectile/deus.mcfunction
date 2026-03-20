@@ -11,11 +11,11 @@ execute if score @s soul_count matches 10 run playsound minecraft:block.respawn_
 playsound entity.warden.sonic_charge ambient @s[tag=machinaeffect] ~ ~ ~ 1 0.5
 execute as @e[tag=machinaeffect] at @s run particle minecraft:glow ~0.2 ~1 ~0.2 0 0 0 0.01 10
 execute as @e[tag=machinaeffect] at @s run particle minecraft:soul_fire_flame ~0.2 ~1 ~-0.2 0 0 0 0.01 10
-execute as @e[tag=machinaeffect] at @s run particle minecraft:flash ~-0.2 ~1 ~0.2 0 0 0 0.01 10
+execute as @e[tag=machinaeffect] at @s run particle minecraft:flash{color:[1.0,1.0,1.0,1.0]} ~-0.2 ~1 ~0.2 0 0 0 0.01 10
 execute as @e[tag=machinaeffect] at @s run particle minecraft:soul_fire_flame ~-0.2 ~1 ~-0.2 0 0 0 0.01 10
 execute as @e[tag=machinaeffect] at @s run particle minecraft:glow ~ ~1 ~ 0 0 0 0.01 10
 execute as @e[tag=machinaeffect] at @s run particle minecraft:soul_fire_flame ~ ~1.4 ~ 0 0 0 0.01 10
-execute as @e[tag=machinaeffect] at @s run particle minecraft:flash ~ ~0.6 ~ 0 0 0 0.01 10
+execute as @e[tag=machinaeffect] at @s run particle minecraft:flash{color:[1.0,1.0,1.0,1.0]} ~ ~0.6 ~ 0 0 0 0.01 10
 execute as @e[tag=machinaeffect] at @s run effect give @s levitation 2 15 true
 execute as @e[tag=machinaeffect] at @s run effect give @s slow_falling 25 20 true
 execute as @e[tag=machinaeffect] at @s run effect give @s resistance 10 20 true

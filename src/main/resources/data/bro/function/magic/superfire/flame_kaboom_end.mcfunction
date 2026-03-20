@@ -13,7 +13,7 @@ execute as @e[type=marker,tag=sat.descend.nuke] at @s run particle campfire_cosy
 execute as @e[type=marker,tag=sat.descend.nuke] at @s run particle campfire_cosy_smoke ~ ~ ~ 0 0 0 .02 20 normal @a[distance=..128]
 execute as @e[type=marker,tag=sat.descend.nuke] at @s run particle flame ~ ~ ~ 0 0 0 .25 100 force @a[distance=..128]
 execute as @e[type=marker,tag=sat.descend.nuke] at @s run particle large_smoke ~ ~ ~ 0 0 0 .1 100 force @a[distance=..128]
-execute as @e[type=marker,tag=sat.descend.nuke] at @s run particle flash ~ ~ ~ 0 0 0 .1 10 force @a[distance=..128]
+execute as @e[type=marker,tag=sat.descend.nuke] at @s run particle flash{color:[1.0,1.0,1.0,1.0]} ~ ~ ~ 0 0 0 .1 10 force @a[distance=..128]
 scoreboard players set @s sat.kaboomtick.0 0
 
 kill @s[type=marker]

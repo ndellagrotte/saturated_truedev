@@ -1,11 +1,11 @@
 # Display particles when effect
-execute as @e[tag=herobrinetrick3] at @s run particle flash ~0.2 ~1 ~0.2 0 0 0 0.01 10
-execute as @e[tag=herobrinetrick3] at @s run particle flash ~0.2 ~1 ~-0.2 0 0 0 0.01 10
-execute as @e[tag=herobrinetrick3] at @s run particle flash ~-0.2 ~1 ~0.2 0 0 0 0.01 10
-execute as @e[tag=herobrinetrick3] at @s run particle flash ~-0.2 ~1 ~-0.2 0 0 0 0.01 10
-execute as @e[tag=herobrinetrick3] at @s run particle flash ~ ~1 ~ 0 0 0 0.01 10
-execute as @e[tag=herobrinetrick3] at @s run particle flash ~ ~1.4 ~ 0 0 0 0.01 10
-execute as @e[tag=herobrinetrick3] at @s run particle flash ~ ~0.6 ~ 0 0 0 0.01 10
+execute as @e[tag=herobrinetrick3] at @s run particle flash{color:[1.0,1.0,1.0,1.0]} ~0.2 ~1 ~0.2 0 0 0 0.01 10
+execute as @e[tag=herobrinetrick3] at @s run particle flash{color:[1.0,1.0,1.0,1.0]} ~0.2 ~1 ~-0.2 0 0 0 0.01 10
+execute as @e[tag=herobrinetrick3] at @s run particle flash{color:[1.0,1.0,1.0,1.0]} ~-0.2 ~1 ~0.2 0 0 0 0.01 10
+execute as @e[tag=herobrinetrick3] at @s run particle flash{color:[1.0,1.0,1.0,1.0]} ~-0.2 ~1 ~-0.2 0 0 0 0.01 10
+execute as @e[tag=herobrinetrick3] at @s run particle flash{color:[1.0,1.0,1.0,1.0]} ~ ~1 ~ 0 0 0 0.01 10
+execute as @e[tag=herobrinetrick3] at @s run particle flash{color:[1.0,1.0,1.0,1.0]} ~ ~1.4 ~ 0 0 0 0.01 10
+execute as @e[tag=herobrinetrick3] at @s run particle flash{color:[1.0,1.0,1.0,1.0]} ~ ~0.6 ~ 0 0 0 0.01 10
 execute as @e[tag=herobrinetrick3] at @s run summon stray ~ ~ ~ {CustomName:'[{"text":"Hero of the Brine: Illusionist"}]',Health:1,PersistenceRequired:1b,Tags:["illusion","sat.immune.herobrine"],Team:invader,active_effects:[{id:weakness,duration:999999,amplifier:10,show_particles:1b}],HandItems:[{id:bow,components:{enchantments:{levels:{lure:0}},unbreakable:{}},count:1},{id:air,count:1}],ArmorItems:[{id:iron_boots,components:{trim:{pattern:silence,material:netherite},enchantments:{levels:{lure:0}},unbreakable:{}},count:1},{id:iron_leggings,components:{trim:{pattern:silence,material:netherite},enchantments:{levels:{lure:0}},unbreakable:{}},count:1},{id:diamond_chestplate,components:{trim:{pattern:silence,material:netherite},enchantments:{levels:{lure:0}},unbreakable:{}},count:1},{id:iron_helmet,components:{trim:{pattern:silence,material:netherite},enchantments:{levels:{lure:0}},unbreakable:{}},count:1}],HandDropChances:[0f,0f],ArmorDropChances:[0f,0f,0f,0f],attributes:[{id:"generic.max_health",base:1f}]}
 execute run scoreboard objectives add potential_trickery dummy
 execute run execute store result score @s potential_trickery run random value 1..4

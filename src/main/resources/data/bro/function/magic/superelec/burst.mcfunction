@@ -6,7 +6,7 @@ execute as @e[tag=brobursteffect] at @s run particle minecraft:glow ~-0.2 ~1 ~0.
 execute as @e[tag=brobursteffect] at @s run particle minecraft:end_rod ~-0.2 ~1 ~-0.2 0 0 0 1 10
 execute as @e[tag=brobursteffect] at @s run particle minecraft:glow ~ ~1 ~ 0 0 0 1 10
 execute as @e[tag=brobursteffect] at @s run particle minecraft:end_rod ~ ~1.4 ~ 0 0 0 1 10
-execute as @e[tag=brobursteffect] at @s run particle minecraft:flash ~ ~0.6 ~ 0 0 0 0.01 10
+execute as @e[tag=brobursteffect] at @s run particle minecraft:flash{color:[1.0,1.0,1.0,1.0]} ~ ~0.6 ~ 0 0 0 0.01 10
 
 #additional sound effects
 execute as @e[tag=brobursteffect] at @s run playsound minecraft:entity.enderman.teleport ambient @a[distance=..30] ~ ~ ~ 1 0.1

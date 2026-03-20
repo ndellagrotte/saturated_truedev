@@ -7,7 +7,7 @@ execute at @s run particle campfire_cosy_smoke ~ ~ ~ .5 .5 .5 .01 5 normal @a[di
 execute at @s run particle campfire_cosy_smoke ~ ~ ~ 0 0 0 .02 20 normal @a[distance=..32]
 execute at @s run particle flame ~ ~ ~ 0 0 0 .25 100 force @a[distance=..32]
 execute at @s run particle large_smoke ~ ~ ~ 0 0 0 .1 100 force @a[distance=..32]
-execute at @s run particle flash ~ ~ ~ 0 0 0 .1 10 force @a[distance=..32]
+execute at @s run particle flash{color:[1.0,1.0,1.0,1.0]} ~ ~ ~ 0 0 0 .1 10 force @a[distance=..32]
 
 #runs the end-stuffs, ykyk
 function bro:magic/superelec/aoe_end
