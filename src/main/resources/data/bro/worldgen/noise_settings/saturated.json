@@ -66,6 +66,24 @@
     "erosion": "minecraft:overworld/erosion",
     "depth": "bro:saturated/depth",
     "ridges": "minecraft:overworld/ridges",
+    "preliminary_surface_level": {
+      "type": "minecraft:flat_cache",
+      "argument": {
+        "type": "minecraft:mul",
+        "argument1": 4,
+        "argument2": {
+          "type": "minecraft:quarter_negative",
+          "argument": {
+            "type": "minecraft:mul",
+            "argument1": "bro:saturated/depth",
+            "argument2": {
+              "type": "minecraft:cache_2d",
+              "argument": "bro:saturated/factor"
+            }
+          }
+        }
+      }
+    },
     "initial_density_without_jaggedness": {
       "type": "minecraft:mul",
       "argument1": 4,
